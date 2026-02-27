@@ -10,6 +10,9 @@ int main(){
     float area;
     float pib;
     int pontosturisticos;
+    float densidadepopulacional;
+    float pibpercapital;
+
 
     //CARTA 2 
     char estado2;
@@ -19,6 +22,9 @@ int main(){
     float area2;
     float pib2;
     int pontosturisticos2;
+    float densidadepopulacional2;
+    float pibpercapital2;
+
 
 //===========CARTA1=========
 printf("\n====Cadastro da carta1 ====\n");
@@ -44,6 +50,9 @@ printf("\n====Cadastro da carta1 ====\n");
     printf("Digite o numero de pontos turistico; ");
     scanf("%d",&pontosturisticos);
 
+    densidadepopulacional= (populaçao/area);
+    pibpercapital= (pib/populaçao);
+
     //========CARTA 2=====
     printf("Digite seu estado: \n");
     scanf(" %c", &estado2);
@@ -66,6 +75,8 @@ printf("\n====Cadastro da carta1 ====\n");
     printf("Digite o numero de pontos turistico; ");
     scanf("%d",&pontosturisticos2);
 
+    densidadepopulacional2= (populaçao2/area2);
+    pibpercapital2= (pib2/populaçao2);
 
 
        //==========SAÍDA========
@@ -78,7 +89,10 @@ printf("\n====Cadastro da carta1 ====\n");
     printf("Populaçao:%d\n", populaçao);
     printf("Area em km²:%2f km²\n", area);
     printf("PIB:%2f bilhoes de reais\n", pib);
-    printf("Numeros de pontos turisticos:%d", pontosturisticos);
+    printf("Numeros de pontos turisticos:%d\n", pontosturisticos);
+    printf ("Densidade populaciona: %.2f\n", densidadepopulacional);
+    printf("Pib per capita: %2f\n", pibpercapital);
+
 
     printf("\n--- Carta 2 ---\n");
     printf("Estado:%c\n", estado2);
@@ -87,7 +101,10 @@ printf("\n====Cadastro da carta1 ====\n");
     printf("Populaçao:%d\n", populaçao2);
     printf("Area em km²:%2f km²\n", area2);
     printf("PIB:%2f bilhoes de reais\n", pib2);
-    printf("Numeros de pontos turisticos:%d", pontosturisticos2);
+    printf("Numeros de pontos turisticos:%d\n", pontosturisticos2);
+    printf ("Densidade populaciona: %.2f\n", densidadepopulacional2);
+    printf("Pib per capita: %2f\n", pibpercapital2);
+
 
 
 
